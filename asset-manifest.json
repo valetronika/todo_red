@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/todo_red/static/css/main.f855e6bc.css",
+    "main.js": "/todo_red/static/js/main.6568ecbf.js",
+    "static/js/787.5458b42b.chunk.js": "/todo_red/static/js/787.5458b42b.chunk.js",
+    "static/media/logo.svg": "/todo_red/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/todo_red/index.html",
+    "main.f855e6bc.css.map": "/todo_red/static/css/main.f855e6bc.css.map",
+    "main.6568ecbf.js.map": "/todo_red/static/js/main.6568ecbf.js.map",
+    "787.5458b42b.chunk.js.map": "/todo_red/static/js/787.5458b42b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.6568ecbf.js"
+  ]
+}
