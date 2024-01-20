@@ -25,10 +25,11 @@ todos: JSON.parse(localStorage.getItem('TodosList')) ??  [
 console.log(initialState);
 const todoSlice = createSlice({
     name: "todo",
-    initialState : initialState.todos,
+    initialState : initialState,
 
     reducers: {
         addTodo(state, action) {
+            console.log(action.payload);
             state.todos.push({
                 id: new Date().toISOString(),
                 text: action.payload.text,
