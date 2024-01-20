@@ -1,0 +1,17 @@
+.footer {
+    margin: 50px auto;
+    &__link {
+        color: #af2f2f56;
+        text-decoration: none;
+        &:hover{
+        color: rgba(138, 41, 41, 0.712);
+
+        }
+    }
+    &__text {
+        color: #af2f2f3f;
+        margin: 10px;
+        text-transform: none;
+        font-size: 0.8rem;
+    }
+}
