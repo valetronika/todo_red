@@ -5,8 +5,10 @@ const saveTodoToLocalStorage = (state)=>{
     localStorage.setItem('TodosList', JSON.stringify(state))
 
 }
+const localDate = JSON.parse(localStorage.getItem('TodosList')).todos;
+// console.log('localDate',localDate);
 const initialState = {
-todos: JSON.parse(localStorage.getItem('TodosList')) ??  [
+todos: localDate ??  [
     {
         id: 1,
         text: "test 1",
@@ -22,14 +24,14 @@ todos: JSON.parse(localStorage.getItem('TodosList')) ??  [
 ],
 
 }
-console.log(initialState);
+// console.log('initialState',initialState);
 const todoSlice = createSlice({
     name: "todo",
-    initialState : initialState,
+    initialState:initialState, //{todos:[{},{},{}]}
 
     reducers: {
         addTodo(state, action) {
-            console.log(action.payload);
+            console.log('typeof state.todos,',typeof state.todos);
             state.todos.push({
                 id: new Date().toISOString(),
                 text: action.payload.text,
@@ -39,7 +41,7 @@ const todoSlice = createSlice({
             saveTodoToLocalStorage(state)
         },
         deleteTodo(state, action) {
-            state.todos = state.todos.filter(
+            state.todos = state.todos.todos.filter(
                 (todo) => todo.id !== action.payload.id
             );
             saveTodoToLocalStorage(state)
