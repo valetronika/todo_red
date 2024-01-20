@@ -1,5 +1,6 @@
 import './App.scss';
 import FilterFooter from './components/FilterFooter/FilterFooter';
+import Footer from './components/Footer/Footer';
 import InputItem from './components/InputItem/InputItem';
 import Title from './components/Title/Title';
 import TodoList from './components/TodoList/TodoList';
@@ -15,6 +16,7 @@ function App() {
           {/* <TodoList/> */}
           <FilterFooter/>
         </div>
+        <Footer/>
       </div>
     </Router>
   );
