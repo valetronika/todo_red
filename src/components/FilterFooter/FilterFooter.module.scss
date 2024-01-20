@@ -1,0 +1,24 @@
+
+
+.footer{
+    display: flex;
+    // display: grid;
+    justify-content: space-between;
+    padding: 15px;
+
+    &__buttons{
+        
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    @media(max-width: 306px){
+        flex-direction: column;
+
+        &__buttons{
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+}

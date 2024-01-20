@@ -1,0 +1,11 @@
+
+.title{
+    text-align: center;
+    font-size: 100px;
+    margin: 0 auto;
+    color: rgba(175, 47, 47, 0.15);
+
+    @media(max-width: 250px){
+        font-size: 35vw;
+    }
+}
