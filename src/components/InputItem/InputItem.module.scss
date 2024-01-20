@@ -1,0 +1,40 @@
+
+.input_label{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    & input{
+        width: 100%;
+        padding: 15px;
+        border: none;
+        &::placeholder{
+            font-weight: 700;
+            font-size: 20px;
+            text-transform: lowercase;
+            font-style: italic;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.322);
+        }
+        &:focus{
+                
+            outline:none;
+        }
+       
+    }
+
+    &__img{
+        cursor: pointer;
+    }
+    @media(max-width: 300px){
+        & input{
+            &::placeholder{
+                font-size: 5vw;
+
+            }
+        }
+    }
+}
