@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import s from './Button.module.scss';
-import { deleteTodo,toggleCompleted } from '../store/todoSlice';
 import {setActive} from '../store/buttonsSlice'
 import { useDispatch } from 'react-redux';
 
