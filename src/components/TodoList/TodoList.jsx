@@ -5,7 +5,7 @@ import TodoItem from "../TodoItem/TodoItem";
 
 export default function TodoList() {
     const todoList = useSelector((state) => state.todosRedusers.todos);
-    // console.log("todoList", todoList);
+    console.log("todoList", todoList);
 
     return (
         <ul className={s.todos}>
