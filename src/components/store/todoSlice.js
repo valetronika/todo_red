@@ -41,7 +41,7 @@ const todoSlice = createSlice({
             saveTodoToLocalStorage(state)
         },
         deleteTodo(state, action) {
-            state.todos = state.todos.todos.filter(
+            state.todos = state.todos.filter(
                 (todo) => todo.id !== action.payload.id
             );
             saveTodoToLocalStorage(state)
