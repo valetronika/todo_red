@@ -12,8 +12,9 @@ const handlerClick = (text) => {
   func(); 
 }
 
+const idNameButton = s[classname] ?? s.button
   return (
-    <button onClick={()=>handlerClick(text)} style={styles}>
+    <button onClick={()=>handlerClick(text)} style={styles} id={idNameButton}>
         {text || "button"}
     </button>
   )

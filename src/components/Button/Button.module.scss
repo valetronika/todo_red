@@ -1,5 +1,5 @@
 
-button{
+#button{
     background-color: transparent;
     padding: 10px;
     // font-size: 0.8rem;
@@ -7,4 +7,14 @@ button{
     cursor: pointer;
 
    
+}
+#add{
+    border:1px solid #7ea774a1 !important;
+    background-color:transparent;
+    padding: 15px;
+    border-radius: 5px;
+    color: #7ea774e1;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
 }
