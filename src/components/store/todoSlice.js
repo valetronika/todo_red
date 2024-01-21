@@ -5,10 +5,10 @@ const saveTodoToLocalStorage = (state)=>{
     localStorage.setItem('TodosList', JSON.stringify(state))
 
 }
-const localDate = JSON.parse(localStorage.getItem('TodosList')).todos;
-// console.log('localDate',localDate);
+const localDate = JSON.parse(localStorage.getItem('TodosList'))?.todos ?? false;
+console.log('localDate',localDate);
 const initialState = {
-todos: localDate ??  [
+todos: localDate !== false ? localDate: [
     {
         id: 1,
         text: "test 1",
