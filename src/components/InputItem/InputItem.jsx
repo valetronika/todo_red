@@ -28,6 +28,10 @@ export default function InputItem() {
             addTask();
         }
     };
+    const handleMouseClick = (e) => {
+        addTask();
+
+      };
     return (
         <div>
             <label className={s.input_label}>
@@ -45,7 +49,7 @@ export default function InputItem() {
                     placeholder="What needs to be done?"
                 />
                 <Button 
-                func={()=>text.trim().length && dispatch(addTodo({ text }))}
+                func={handleMouseClick}
                 text={"add"} 
                 classname={"add"} />
             </label>
